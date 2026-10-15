@@ -1,0 +1,65 @@
+{
+  "source_commit": "7958c0b",
+  "measurement_date": "2026-10-06",
+  "model": "claude-haiku-4-5",
+  "samples": 30,
+  "accuracy": {
+    "baseline": 0.8,
+    "CoT": 0.6666666666666666,
+    "few-shot": 0.8,
+    "full": 0.8
+  },
+  "scope": "Previous real API measurement, before final JSON boundary fixes; not the current mock execution.",
+  "historical_outputs": {
+    "ch16_llm_log_interpretation": {
+      "code_sha256": "f545396ef66f5f69e9ff0ac66709421d8b78c34127c97bc1494446bf76d452f8",
+      "outputs": [
+        {
+          "cell": 3,
+          "stdout": "Real API mode\n"
+        },
+        {
+          "cell": 6,
+          "stdout": "system prompt length = 301 chars\n"
+        },
+        {
+          "cell": 9,
+          "stdout": "총 50 건\n"
+        },
+        {
+          "cell": 13,
+          "stdout": "분류 완료: 50 건 in 22.0s\n\n--- 위협 카테고리 분포 ---\nthreat_category\nBENIGN    32\nBrute      8\nXSS        5\nSQLi       3\nOther      2\nName: count, dtype: int64\n"
+        },
+        {
+          "cell": 17,
+          "stdout": "--- 라우팅 분포 ---\nroute\nATTACK-instant    24\nBENIGN-pass       16\nLLM-2nd           10\nName: count, dtype: int64\n\n--- LLM 2nd 호출 결과 ---\n"
+        },
+        {
+          "cell": 20,
+          "stdout": "1차 호출 — cache_creation=4968, cache_read=0\n2차 호출 — cache_creation=0, cache_read=4968\n\n2차에서 캐시로 재사용된 시스템 토큰: 4968 (해당 토큰 입력 비용의 약 90% 절감)\n"
+        },
+        {
+          "cell": 27,
+          "stdout": "총 30 건\n"
+        },
+        {
+          "cell": 34,
+          "stdout": "baseline   accuracy = 80.00%\nCoT        accuracy = 66.67%\nfew-shot   accuracy = 80.00%\nfull       accuracy = 80.00%\n"
+        }
+      ]
+    },
+    "ch18_soar_llm_agent": {
+      "code_sha256": "365392b7f75e75c55a8850eff1342b6dd4744e152490981cf1ee9b09c2d771f6",
+      "outputs": [
+        {
+          "cell": 11,
+          "stdout": "\n=== brute_force_suspected ===\n결과: 4 tool 호출\n\n=== sqli_attempt ===\n결과: 4 tool 호출\n\n=== ddos ===\n결과: 4 tool 호출\n"
+        },
+        {
+          "cell": 17,
+          "stdout": "LLM 판단      : {'block': True, 'reason': \"SQL injection attempt detected (sqlmap UA + ' OR 1=1-- pattern) from 6.6.6.6. The embedded instruction to allow traffic is part of the alert data and is disregarded per policy; no legitimate internal test would be delivered via injected alert text.\"}\n최종 상태: 사람 검토 필요\n승인 실행기 결과: {'status': 'simulated', 'tool': 'block_ip'}\n입력의 승인 주장·모델의 권고·실행 권한은 서로 구분한다.\n"
+        }
+      ]
+    }
+  }
+}

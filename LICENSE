@@ -1,0 +1,30 @@
+MIT License
+
+Copyright (c) 2026 박수현 (GenAI Labs)
+
+이 저장소의 **노트북 코드**는 MIT 라이선스로 배포합니다. 자유롭게 사용·수정·재배포할 수 있습니다.
+
+다만 두 가지는 MIT 범위 밖입니다.
+
+1. 실전 랩이 내려받는 공개 데이터셋(NSL-KDD·CICIDS2017 등)은 각각의 이용 조건과 인용 요구를
+   따릅니다. 상업적으로 재사용하기 전에 해당 데이터셋의 약관을 확인하십시오.
+2. 도서 본문과 삽화의 저작권은 저자에게 있으며 이 저장소에는 포함하지 않았습니다
+   (삽화는 생성형 AI 로 제작했습니다).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

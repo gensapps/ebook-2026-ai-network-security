@@ -1,0 +1,23 @@
+# 2026-10-06 Python 3.10 프로젝트 .venv: 노트북 26종 전체와 회귀 테스트를 실행한 환경.
+# 호환성 보증이나 잠금 파일이 아니다. 실행 범위는 README.md 참조.
+numpy==2.2.6
+pandas==2.3.3
+scikit-learn==1.7.2
+scipy==1.15.3
+matplotlib==3.10.9
+seaborn==0.13.2
+xgboost==3.2.0
+scapy==2.8.0
+cryptography==50.0.2  # ch04 TLS: 최종 재실행에서 누락 확인 후 추가
+anthropic==1.11.0
+chromadb==1.5.9
+sentence-transformers==6.1.0
+nbformat==5.11.1
+
+# 선택 의존성 — 해당 실습을 실행할 때만 필요
+tensorflow-cpu==2.21.0   # ch10 AutoEncoder
+imbalanced-learn==0.14.2 # ch13 SMOTE
+
+# 도서 제작·PDF 검증 (requirements-build.txt 로도 설치된다)
+pypdf==6.19.0
+PyMuPDF==1.28.2

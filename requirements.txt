@@ -1,0 +1,36 @@
+# 「바이브 코딩으로 만드는 인공지능 네트워크 보안」 실습 환경 (Python 3.10+)
+#   설치:  pip install -r requirements.txt
+#   Colab: 대부분 사전 설치되어 있어 누락분만 설치된다.
+# 아래는 설치 범위다. 상위 버전의 API 호환을 보장하지 않는다.
+# 검증한 실행 범위와 버전은 00_planning/06_reproducibility.md에 기록한다.
+
+# --- 핵심 (전 챕터) ---
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.3
+scipy>=1.11
+matplotlib>=3.7
+seaborn>=0.13
+requests>=2.31
+
+# --- Part I 패킷/프로토콜 분석 ---
+scapy>=2.5
+cryptography>=42  # ch04: Scapy TLS ClientHello 파싱
+
+# --- Part III 고급 ML ---
+xgboost>=2.0
+
+# --- Part IV LLM·RAG·Agent ---
+anthropic>=0.40
+chromadb>=0.5
+sentence-transformers>=2.2
+
+# --- 노트북 실행/변환 도구 ---
+nbformat>=5.9
+nbconvert>=7.0
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# --- 선택 의존성 (있으면 해당 실습 활성화, 없으면 자동 mock/대체) ---
+# imbalanced-learn>=0.11   # ch13 SMOTE 오버샘플링
+# tensorflow>=2.15         # ch10 AutoEncoder 이상탐지
